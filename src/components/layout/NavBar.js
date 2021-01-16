@@ -7,7 +7,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 const NavBar = props => {
   return (
-    <Navbar expand='lg' bg='light' sticky='top' >
+    <Navbar expand='lg' sticky='top' className='navbar'>
       <Navbar.Brand>
         <Logo logo='../img/logo.png' logoAlt="Mark's logo" />
       </Navbar.Brand>
@@ -38,7 +38,7 @@ const NavBar = props => {
           <Nav.Link
             href='https://github.com/markdcross'
             target='_blank'
-            className='githubBtn button ctcLinks'
+            className='btn-link button ctcLinks'
             rel='noreferrer noopener'
           >
             <span className='icon'>
@@ -49,7 +49,7 @@ const NavBar = props => {
           <Nav.Link
             href='https://www.linkedin.com/in/markdcross/'
             target='_blank'
-            className='githubBtn button ctcLinks'
+            className='btn-link button ctcLinks'
             rel='noreferrer noopener'
           >
             <span className='icon'>

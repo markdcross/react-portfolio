@@ -3,13 +3,13 @@ import Row from 'react-bootstrap/Row';
 
 const Footer = () => {
   return (
-    <Row className='credits'>
+    <Row className='credits' fixed='bottom'>
       <p className='text-center text-muted'>
         Created by Mark Cross | Powered by React&nbsp;
         <i className='fab fa-react'></i> | Copyright © 2020
       </p>
       <span className='text-center text-muted'>
-        Photo by
+        &nbsp;Photo by&nbsp;
         <a href='https://unsplash.com/@kovacsz1?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>
           Z S
         </a>

@@ -1,9 +1,13 @@
-.credits {
-  justify-content: center;
-}
-
 body {
   background-image: url('img/hero.jpg');
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+.btn-link {
+  color: rgb(70, 70, 70) !important;
 }
 
 .jumbotron {
@@ -12,4 +16,21 @@ body {
   justify-content: center;
   align-items: center;
   background-color: transparent !important;
+}
+
+.credits a {
+  color: rgb(70, 70, 70);
+  text-decoration: underline;
+}
+
+.credits,
+.credits p,
+.credits span {
+  position: fixed;
+  height: 2rem;
+  bottom: 0;
+  width: 100%;
+  color: rgb(70, 70, 70) !important;
+  text-align: center !important;
+  justify-content: center;
 }
