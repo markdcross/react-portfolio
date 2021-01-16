@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Logo from './Logo';
-// import ContactModal from '../contact/ContactModal';
+import ContactModal from '../contact/ContactModal';
 import { LinkContainer } from 'react-router-bootstrap';
 
 const NavBar = props => {
@@ -33,7 +33,7 @@ const NavBar = props => {
             Resume
           </Nav.Link>
 
-          {/* <ContactModal /> */}
+          <ContactModal />
 
           <Nav.Link
             href='https://github.com/markdcross'
