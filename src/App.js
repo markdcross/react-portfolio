@@ -10,7 +10,7 @@ import Footer from './components/layout/Footer';
 function App() {
   return (
     <Router>
-      <Container>
+      <Container className='heroDiv'>
         <NavBar />
         <Switch>
           <Route exact path='/' component={Home} />

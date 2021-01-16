@@ -7,9 +7,9 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 const NavBar = props => {
   return (
-    <Navbar expand='lg' bg='light' sticky='top'>
+    <Navbar expand='lg' bg='light' sticky='top' >
       <Navbar.Brand>
-        <Logo logo='img/logo.png' logoAlt="Mark's logo" />
+        <Logo logo='../img/logo.png' logoAlt="Mark's logo" />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse id='responsive-navbar-nav'>

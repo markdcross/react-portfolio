@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-// import Intro from '../user/Intro';
+import Landing from '../info/Landing';
 // import Bio from '../user/Bio';
 // import Stack from '../user/Stack';
 import Jumbotron from 'react-bootstrap/Jumbotron';
@@ -7,8 +7,8 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 const Home = () => {
   return (
     <Fragment>
-      <Jumbotron className='heroDiv'>
-        {/* <Intro /> */}
+      <Jumbotron className='jumbotron'>
+        <Landing />
         {/* <Bio /> */}
         {/* <Stack /> */}
       </Jumbotron>
