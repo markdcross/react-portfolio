@@ -19,12 +19,25 @@ body {
   justify-content: center;
   align-items: center;
   background-color: transparent !important;
+  height: 75%;
 }
 
-.projectContainer {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+.compactCard {
+  display: inline-flex;
+  text-align: center;
+  width: 40%;
+  margin: 1%;
+  cursor: pointer;
+}
+
+.expandedCard {
+  display: inline-flex;
+  text-align: center;
+  height: auto;
+  width: 75%;
+  margin: 1%;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .credits a {
@@ -43,4 +56,12 @@ body {
   justify-content: center;
   z-index: -1;
   background-color: rgba(67, 101, 115, 0.25);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .mediaQuery {
+    width: 100% !important;
+    background-color: rgba(191, 178, 163, 1);
+  }
 }

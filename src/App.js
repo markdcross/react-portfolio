@@ -1,5 +1,4 @@
 import './App.css';
-import Container from 'react-bootstrap/Container';
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/layout/NavBar';
@@ -11,12 +10,12 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <Container>
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/portfolio' component={Portfolio} />
-        </Switch>
-      </Container>
+
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/portfolio' component={Portfolio} />
+      </Switch>
+
       <Footer />
     </Router>
   );

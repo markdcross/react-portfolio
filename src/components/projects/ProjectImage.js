@@ -1,35 +1,56 @@
 import React, { useState } from 'react';
-import Image from 'react-bootstrap/Image';
-import { AnimateSharedLayout } from 'framer-motion';
+import Card from 'react-bootstrap/Card';
+import ProjectDetail from './ProjectDetail';
+
 import { motion, AnimatePresence } from 'framer-motion';
 
-function ProjectImage({ name, image, description, repo, app }) {
-  const [selectedId, setSelectedId] = useState(null);
+const ProjectImage = ({ projName, image, description, repo, app }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => setIsOpen(!isOpen);
+  console.log(isOpen);
 
   return (
-    <AnimateSharedLayout type='crossfade'>
-      <Image src={image} fluid />
-    </AnimateSharedLayout>
+    <motion.div
+      layout
+      onClick={toggleOpen}
+      className={isOpen ? 'expandedCard' : 'compactCard'}
+    >
+      <Card>
+        <Card.Img src={image} alt={projName} />
+        <AnimatePresence>
+          {isOpen && (
+            <Card.ImgOverlay
+              style={{
+                zIndex: 10,
+                backgroundColor: 'rgba(191, 178, 163, .75)',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center'
+              }}
+            >
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className='mediaQuery'
+                style={{
+                  width: '75%'
+                }}
+              >
+                <ProjectDetail
+                  name={projName}
+                  description={description}
+                  repo={repo}
+                  app={app}
+                />
+              </motion.div>
+            </Card.ImgOverlay>
+          )}
+        </AnimatePresence>
+      </Card>
+    </motion.div>
   );
-}
+};
 
 export default ProjectImage;
-
-<AnimateSharedLayout type='crossfade'>
-  {items.map(item => (
-    <motion.div layoutId={item.id} onClick={() => setSelectedId(item.id)}>
-      <motion.h5>{item.subtitle}</motion.h5>
-      <motion.h2>{item.title}</motion.h2>
-    </motion.div>
-  ))}
-
-  <AnimatePresence>
-    {selectedId && (
-      <motion.div layoutId={selectedIdentifier}>
-        <motion.h5>{item.subtitle}</motion.h5>
-        <motion.h2>{item.title}</motion.h2>
-        <motion.button onClick={() => setSelectedId(null)} />
-      </motion.div>
-    )}
-  </AnimatePresence>
-</AnimateSharedLayout>;
