@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Stack = props => {
+export const Stack = () => {
 
   return (
     <div>

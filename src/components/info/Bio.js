@@ -1,15 +1,16 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
 
-const Bio = props => {
+const Bio = () => {
   return (
-    <div>
+    <div className='landingBlock'>
       <div className='row'>
         <article className='col-md-12'>
           <figure className='image is-1x1'>
-            <img id='headshot' src='img/headshot.png' alt='headshot' />
-            <div id='introContent'>
-              <p className='title'>Who is that handsome devil?</p>
-              <p id='bioText'>
+            <img src='img/headshot.png' alt='headshot' />
+            <div>
+              <p>Who is that handsome devil?</p>
+              <p>
                 I'm Mark Cross and I'm enrolled in the University of Richmond
                 Coding Bootcamp. Born and raised in Annapolis, MD, graduate of
                 the University of Delaware (go Blue Hens 🐓), and now Richmond
@@ -19,6 +20,7 @@ const Bio = props => {
                 <a href='https://www.edconnective.com/'>EdConenctive</a>.
               </p>
             </div>
+            <i className={`far fa-hand-point-down`}></i>
           </figure>
         </article>
       </div>

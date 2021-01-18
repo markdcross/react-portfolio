@@ -13,13 +13,18 @@ body {
   color: rgb(70, 70, 70) !important;
 }
 
+.landingBlock {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 .jumbotron {
   background: transparent;
   text-align: center;
   justify-content: center;
   align-items: center;
   background-color: transparent !important;
-  height: 75%;
+  height: 50%;
 }
 
 .compactCard {
