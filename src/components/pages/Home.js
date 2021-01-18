@@ -7,13 +7,13 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 
-// TODO React Reveal
-
 const Home = () => {
   return (
     <Jumbotron className='jumbotron'>
-      <Landing />
-      <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut' offset={300}>
+      <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
+        <Landing />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut' offset={500}>
         <Jumbotron className='jumbotron'>
           <Bio />
         </Jumbotron>

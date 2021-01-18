@@ -1,11 +1,13 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export const Stack = () => {
-
   return (
-    <div>
-      <div class='row'>
-        <article class='col-md-4 stackContent content'>
+    <Container className="stack">
+      <Row>
+        <Col>
           <h1 class='title'>Languages & Frameworks</h1>
           <h3 class='subtitle'>Dream it</h3>
           <div class='content'>
@@ -17,9 +19,9 @@ export const Stack = () => {
               <li>NoSQL</li>
             </ul>
           </div>
-        </article>
+        </Col>
 
-        <article class='col-md-4 stackContent content'>
+        <Col>
           <h1 class='title'>Tools & Libraries</h1>
           <h3 class='subtitle'>Build it</h3>
           <div class='content'>
@@ -35,9 +37,9 @@ export const Stack = () => {
               <li>Heroku/Netlify/Digital Ocean</li>
             </ul>
           </div>
-        </article>
+        </Col>
 
-        <article class='col-md-4 stackContent content'>
+        <Col>
           <h1 class='title'>Sales & Operations</h1>
           <h3 class='subtitle'>Monetize it</h3>
           <div class='content'>
@@ -51,9 +53,9 @@ export const Stack = () => {
               <li>Sales enablement platforms</li>
             </ul>
           </div>
-        </article>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

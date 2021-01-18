@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 
 const Bio = () => {
   return (
-    <div className='landingBlock'>
+    <div>
       <div className='row'>
         <article className='col-md-12'>
           <figure className='image is-1x1'>
