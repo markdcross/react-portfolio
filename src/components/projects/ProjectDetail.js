@@ -4,13 +4,7 @@ import CardButton from './CardButton';
 
 const ProjectDetail = ({ name, description, repo, app }) => {
   return (
-    <div
-      style={{
-        backgroundColor: 'rgba(191, 178, 163, 1)',
-        borderRadius: '1rem',
-        padding: '2rem'
-      }}
-    >
+    <div className='projectDetail mediaQuery'>
       <Card.Title
         style={{
           color: '#143840',

@@ -14,7 +14,6 @@ const Projects = () => {
   const [filterState, setFilterState] = useState('');
 
   const projectListArray = projectState.projectList;
-  const filteredProjectListArray = projectState.filteredProjectList;
 
   // Whenever searchState (representing the input in the search bar) changes, filter the employee list
   useEffect(() => {

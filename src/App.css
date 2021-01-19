@@ -76,7 +76,11 @@ body {
   justify-content: center;
   cursor: pointer;
 }
-
+.projectDetail {
+  background-color: rgba(191, 178, 163, 1);
+  border-radius: 1rem;
+  padding: 2rem;
+}
 .credits a {
   color: rgb(70, 70, 70);
   text-decoration: underline;
