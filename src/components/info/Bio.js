@@ -8,7 +8,7 @@ const Bio = () => {
     <Container className='bioBlock'>
       <Row>
         <article className='col-md-12'>
-          <Image src='img/headshot.png' alt='headshot' roundedCircle />
+          <Image src='img/headshot.png' alt='headshot' className='headshot' roundedCircle />
           <div>
             <h1>Who is that handsome devil?</h1>
             <p>
