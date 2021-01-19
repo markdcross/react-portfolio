@@ -42,7 +42,7 @@ body {
 }
 
 .modal-body a {
-  color: #436573;
+  color: #f2d2b6;
 }
 
 .links {
@@ -147,6 +147,7 @@ body {
   justify-content: center;
   z-index: -1;
   background-color: rgba(67, 101, 115, 0.25);
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Media Queries */
