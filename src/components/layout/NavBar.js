@@ -10,18 +10,15 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 export const NavBar = () => {
   const [mobileNavOpened, setMobileNavOpened] = useState(false);
-  console.log(mobileNavOpened);
-
-  const location = useLocation(); // grab the current route with a React hook
-
-  const activeLocation = location.pathname;
-
-  // whenever "activeRoute" changes, hide our dropdown
-  // useEffect(() => {
-  //   setMobileNavOpened(false);
-  // }, [activeLocation]);
-
   const toggleMobileNav = () => setMobileNavOpened(!mobileNavOpened);
+
+  //* Dismiss navbar on link click
+  // grab the current route with a React hook
+  const location = useLocation();
+  // whenever "location" changes, hide our dropdown
+  useEffect(() => {
+    setMobileNavOpened(false);
+  }, [location]);
 
   return (
     <Navbar className={mobileNavOpened ? 'nav dropdown-opened' : 'nav'}>
