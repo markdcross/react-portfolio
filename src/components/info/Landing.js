@@ -13,6 +13,7 @@ const Landing = () => {
       >
         Hi, I'm Mark.
       </h1>
+
       <ScrollAnimation
         animateIn='fadeIn'
         animateOut='fadeOut'
@@ -36,10 +37,15 @@ const Landing = () => {
       >
         <h3>
           Get to know me below.&nbsp;
-          <i className={`far fa-hand-point-down`}></i>
+          <i
+            className={`far fa-hand-point-down`}
+          ></i>
           <br />
           Check out my work and get in touch above.&nbsp;
-          <i className={`far fa-hand-point-up`}></i>
+          <i
+            className={`far fa-hand-point-up`}
+
+          ></i>
         </h3>
       </ScrollAnimation>
     </Container>

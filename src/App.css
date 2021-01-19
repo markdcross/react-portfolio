@@ -1,5 +1,6 @@
 * {
   font-family: 'Tienne', serif;
+  color: #143840;
 }
 
 body {
@@ -57,10 +58,6 @@ body {
   display: none; /* hide our hamburger button until we're on mobile */
 }
 
-.btn-link {
-  color: rgb(70, 70, 70) !important;
-}
-
 .landingBlock {
   margin-top: 10%;
   margin-bottom: 15%;
@@ -68,6 +65,7 @@ body {
 
 .landingBlock h1 {
   font-size: 6rem;
+  color: #143840;
 }
 
 .bioBlock {
@@ -120,12 +118,17 @@ body {
   cursor: pointer;
 }
 .projectDetail {
-  background-color: rgba(191, 178, 163, 1);
+  background-color: #7d8c8b;
   border-radius: 1rem;
   padding: 2rem;
 }
+.projectDetail p,
+.projectDetail h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .credits a {
-  color: rgb(70, 70, 70);
+  color: #7d8c8b;
   text-decoration: underline;
 }
 
@@ -219,9 +222,14 @@ body {
 
   .mediaQuery {
     width: 100% !important;
-    background-color: rgba(191, 178, 163, 1);
+    background-color: #f2d2b6;
   }
   .mobileHide {
     display: none;
+  }
+  body {
+    background-image: none;
+    color: #143840;
+    background-color: #f2d2b6 !important;
   }
 }

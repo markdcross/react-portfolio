@@ -8,7 +8,12 @@ const Bio = () => {
     <Container className='bioBlock'>
       <Row>
         <article className='col-md-12'>
-          <Image src='img/headshot.png' alt='headshot' className='headshot' roundedCircle />
+          <Image
+            src='img/headshot.png'
+            alt='headshot'
+            className='headshot'
+            roundedCircle
+          />
           <div>
             <h1>Who is that handsome devil?</h1>
             <p>
@@ -17,12 +22,12 @@ const Bio = () => {
               University of Delaware (go Blue Hens 🐓), and now Richmond local.
               I've spent my career in sales and sales leadership, having
               recently served as the head of sales for Richmond-based startup,
-              <a href='https://www.edconnective.com/'>EdConenctive</a>.
+              <a href='https://www.edconnective.com/'> EdConenctive</a>.
             </p>
           </div>
           <i
             className='far fa-hand-point-down mobileHide'
-            style={{ fontSize: '2rem' }}
+            style={{ fontSize: '2rem', color: '#143840' }}
           ></i>
         </article>
       </Row>

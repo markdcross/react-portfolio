@@ -10,7 +10,11 @@ export const CardButton = ({ text, href }) => {
         href={href}
         target='_blank'
         rel='noreferrer noopener'
-        style={{ color: '#BFB2A3', fontWeight: 'bold' }}
+        style={{
+          color: '#BFB2A3',
+          fontWeight: 'bold',
+          fontFamily: `'Montserrat', sans-serif`
+        }}
       >
         {text}
       </a>
