@@ -26,7 +26,7 @@
     "img": "./img/teambuilder.png",
     "alt": "8-bit Engineers",
     "repo": "https://github.com/markdcross/8-bit-engineers",
-    "app": "https://markdcross.github.io/perspektiv/",
+    "app": "https://github.com/markdcross/8-bit-engineers",
     "tech": ["node", "jest", "javascript"]
   },
   {
