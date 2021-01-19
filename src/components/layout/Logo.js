@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 const Logo = ({ logo, logoAlt }) => {
   return (
     <Fragment>
-      <img src={logo} alt={logoAlt} width='200' />
+      <img src={logo} alt={logoAlt} width='100' />
     </Fragment>
   );
 };
