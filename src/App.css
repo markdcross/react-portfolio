@@ -1,3 +1,7 @@
+* {
+  font-family: 'Tienne', serif;
+}
+
 body {
   background-image: url('img/hero.jpg');
   background-repeat: no-repeat;
@@ -58,13 +62,23 @@ body {
 }
 
 .landingBlock {
-  margin-top: 12%;
+  margin-top: 10%;
   margin-bottom: 15%;
+}
+
+.landingBlock h1 {
+  font-size: 6rem;
 }
 
 .bioBlock {
   margin-top: 15%;
   margin-bottom: 12%;
+}
+.bioBlock h1 {
+  font-size: 3rem;
+}
+.bioBlock p {
+  font-size: 1.5rem;
 }
 
 .stackBlock {
@@ -187,8 +201,24 @@ body {
     transform: translateY(0); /* move into view */
   }
 
+  .landingBlock {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .bioBlock {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .stackBlock {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
   .mediaQuery {
     width: 100% !important;
     background-color: rgba(191, 178, 163, 1);
+  }
+  .mobileHide {
+    display: none;
   }
 }

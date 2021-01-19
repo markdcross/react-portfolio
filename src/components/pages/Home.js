@@ -8,14 +8,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const Home = () => {
   return (
     <Fragment>
-      <ScrollAnimation
-        animateIn='fadeIn'
-        animateOut='fadeOut'
-        initiallyVisible={true}
-        offset={300}
-      >
-        <Landing />
-      </ScrollAnimation>
+      <Landing />
       <ScrollAnimation
         animateIn='fadeIn'
         animateOut='fadeOut'

@@ -10,7 +10,7 @@ const Bio = () => {
         <article className='col-md-12'>
           <Image src='img/headshot.png' alt='headshot' roundedCircle />
           <div>
-            <p>Who is that handsome devil?</p>
+            <h1>Who is that handsome devil?</h1>
             <p>
               I'm Mark Cross and I'm enrolled in the University of Richmond
               Coding Bootcamp. Born and raised in Annapolis, MD, graduate of the
@@ -20,7 +20,10 @@ const Bio = () => {
               <a href='https://www.edconnective.com/'>EdConenctive</a>.
             </p>
           </div>
-          <i className={`far fa-hand-point-down`}></i>
+          <i
+            className='far fa-hand-point-down mobileHide'
+            style={{ fontSize: '2rem' }}
+          ></i>
         </article>
       </Row>
     </Container>
