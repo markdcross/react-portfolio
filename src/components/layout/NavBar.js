@@ -5,7 +5,6 @@ import ContactModal from '../contact/ContactModal';
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
 import { LinkContainer } from 'react-router-bootstrap';
 
 export const NavBar = () => {
