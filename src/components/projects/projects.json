@@ -27,7 +27,7 @@
     "alt": "8-bit Engineers",
     "repo": "https://github.com/markdcross/8-bit-engineers",
     "app": "https://github.com/markdcross/8-bit-engineers",
-    "tech": ["node", "jest", "javascript"]
+    "tech": ["nodejs", "jest", "javascript"]
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "alt": "Fancy Post-Its",
     "repo": "https://github.com/markdcross/fancy-post-its",
     "app": "https://fancy-post-its.herokuapp.com/",
-    "tech": ["node", "express", "javascript"]
+    "tech": ["nodejs", "express", "javascript"]
   },
   {
     "id": 5,
@@ -48,7 +48,7 @@
     "repo": "https://github.com/jallan07/gitjobs-application-tracker",
     "app": "https://gitjobs-application-tracker.herokuapp.com/",
     "tech": [
-      "node",
+      "nodejs",
       "express",
       "javascript",
       "mysql",
@@ -68,6 +68,6 @@
     "alt": "Eat Da Burger",
     "repo": "https://github.com/markdcross/burger",
     "app": "https://bc-hw13-burger.herokuapp.com/",
-    "tech": ["node", "express", "javascript", "mysql", "jquery", "handlebars"]
+    "tech": ["nodejs", "express", "javascript", "mysql", "jquery", "handlebars"]
   }
 ]

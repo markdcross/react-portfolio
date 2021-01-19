@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ProjectImage from './ProjectImage';
+import ProjectFilter from './ProjectFilter';
 import projects from './projects.json';
 
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -26,8 +27,6 @@ const Projects = () => {
         );
       })
     });
-    console.log({ filterState });
-    console.log({ filteredProjectListArray });
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filterState]);
@@ -35,50 +34,10 @@ const Projects = () => {
   return (
     <AnimateSharedLayout>
       <h1>Recent Projects</h1>
-      <h3>Select a technology below to filter the list</h3>
+      <hr />
+      <ProjectFilter filter={setFilterState} />
 
-      <img
-        src='https://cdn.svgporn.com/logos/react.svg'
-        alt='React'
-        onClick={() => setFilterState('react')}
-        style={{ cursor: 'pointer', height: '3rem', marginRight: '2rem' }}
-      />
-      <img
-        src='https://cdn.svgporn.com/logos/javascript.svg'
-        alt='JavaScript'
-        onClick={() => setFilterState('javascript')}
-        style={{ cursor: 'pointer', height: '3rem', marginRight: '2rem' }}
-      />
-      <img
-        src='https://cdn.svgporn.com/logos/nodejs.svg'
-        alt='Nodejs'
-        onClick={() => setFilterState('node')}
-        style={{ cursor: 'pointer', height: '3rem', marginRight: '2rem' }}
-      />
-      <img
-        src='https://cdn.svgporn.com/logos/mongodb.svg'
-        alt='MongoDB'
-        onClick={() => setFilterState('mongodb')}
-        style={{ cursor: 'pointer', height: '3rem', marginRight: '2rem' }}
-      />
-      <img
-        src='https://cdn.svgporn.com/logos/mysql.svg'
-        alt='MySQL'
-        onClick={() => setFilterState('mysql')}
-        style={{ cursor: 'pointer', height: '3rem', marginRight: '2rem' }}
-      />
-      <i
-        class='far fa-times-circle'
-        onClick={() => setFilterState('')}
-        style={{
-          display: 'inline-block',
-          cursor: 'pointer',
-          fontSize: '2rem',
-          marginRight: '2rem',
-          justifyContent: 'center'
-        }}
-      />
-
+      <hr />
       <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
         {projectState.filteredProjectList.map(
           ({ id, img, name, description, repo, app }, i) => (
