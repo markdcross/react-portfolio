@@ -63,6 +63,10 @@ body {
   margin-bottom: 15%;
 }
 
+.landingMargin {
+  margin-bottom: 3rem;
+}
+
 .landingBlock h1 {
   font-size: 6rem;
   color: #143840;
@@ -205,8 +209,10 @@ body {
   }
 
   .landingBlock {
-    margin-top: 5%;
     margin-bottom: 5%;
+  }
+  .landingMargin {
+    margin-bottom: 1rem;
   }
   .bioBlock {
     margin-top: 5%;

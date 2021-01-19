@@ -6,13 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const Landing = () => {
   return (
     <Container className='landingBlock'>
-      <h1
-        style={{
-          marginBottom: '3rem'
-        }}
-      >
-        Hi, I'm Mark.
-      </h1>
+      <h1 className='landingMargin'>Hi, I'm Mark.</h1>
 
       <ScrollAnimation
         animateIn='fadeIn'
@@ -20,11 +14,7 @@ const Landing = () => {
         delay={1500}
         animateOnce={true}
       >
-        <h2
-          style={{
-            marginBottom: '3rem'
-          }}
-        >
+        <h2 className='landingMargin'>
           Full Stack Developer. Sales Leader. <br />
           Killer Haircut.
         </h2>
@@ -37,15 +27,10 @@ const Landing = () => {
       >
         <h3>
           Get to know me below.&nbsp;
-          <i
-            className={`far fa-hand-point-down`}
-          ></i>
+          <i className={`far fa-hand-point-down`}></i>
           <br />
           Check out my work and get in touch above.&nbsp;
-          <i
-            className={`far fa-hand-point-up`}
-
-          ></i>
+          <i className={`far fa-hand-point-up`}></i>
         </h3>
       </ScrollAnimation>
     </Container>
