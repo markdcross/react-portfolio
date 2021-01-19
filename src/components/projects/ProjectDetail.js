@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import CardButton from './CardButton';
 
-const ProjectDetail = ({ projName, description, repo, app }) => {
+const ProjectDetail = ({ name, description, repo, app }) => {
   return (
     <div
       style={{
@@ -18,7 +18,7 @@ const ProjectDetail = ({ projName, description, repo, app }) => {
           fontWeight: 'bold'
         }}
       >
-        {projName}
+        {name}
       </Card.Title>
       <Card.Text
         style={{

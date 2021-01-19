@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "React Employee Directory",
-    "description": "An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name. This employee directory allows you to do that and more. Built with React, the page makes an API call to the Random User API to populate the employee data. That data can then be sorted by first or last name, ascending or descending, alphabetically. You can also search the list by first name, last name, or phone number.",
+    "description": "An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. Built with React, this page makes an API call to the Random User API to populate the employee data. That data can then be sorted by first or last name, ascending or descending, alphabetically. You can also search the list by first name, last name, or phone number.",
     "img": "./img/react-employee-dir.png",
     "alt": "React Employee Directory",
     "repo": "https://github.com/markdcross/react-employee-directory",

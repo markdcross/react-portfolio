@@ -10,11 +10,11 @@ const Projects = () => {
   return (
     <AnimateSharedLayout>
       <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
-        {projects.map(({ id, img, projName, description, repo, app }, i) => (
+        {projects.map(({ id, img, name, description, repo, app }, i) => (
           <ProjectImage
             layout
             image={img}
-            name={projName}
+            name={name}
             description={description}
             repo={repo}
             app={app}
