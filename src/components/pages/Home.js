@@ -14,7 +14,7 @@ const Home = () => {
         <Landing />
       </ScrollAnimation>
       <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut' offset={500}>
-        <Jumbotron className='jumbotron'>
+        <Jumbotron className='jumbotron bioBlock'>
           <Bio />
         </Jumbotron>
       </ScrollAnimation>
