@@ -126,7 +126,7 @@ body {
     /* then, arrange our links top to bottom */
     display: flex;
     flex-direction: column;
-    /* center links vertically, push to the right horizontally.
+    /* center links vertically and horizontally.
        this means our links will line up with the rightward hamburger button */
     justify-content: center;
     align-items: center;

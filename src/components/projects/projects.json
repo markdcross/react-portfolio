@@ -6,7 +6,8 @@
     "img": "./img/perspektiv.png",
     "alt": "Perspektiv",
     "repo": "https://github.com/markdcross/perspektiv",
-    "app": "https://markdcross.github.io/perspektiv/"
+    "app": "https://markdcross.github.io/perspektiv/",
+    "tech": ["jquery", "materialize", "javascript"]
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "img": "./img/react-employee-dir.png",
     "alt": "React Employee Directory",
     "repo": "https://github.com/markdcross/react-employee-directory",
-    "app": "https://wonderful-wiles-5374b9.netlify.app/"
+    "app": "https://wonderful-wiles-5374b9.netlify.app/",
+    "tech": ["react", "axios", "javascript"]
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "img": "./img/teambuilder.png",
     "alt": "8-bit Engineers",
     "repo": "https://github.com/markdcross/8-bit-engineers",
-    "app": "https://markdcross.github.io/perspektiv/"
+    "app": "https://markdcross.github.io/perspektiv/",
+    "tech": ["node", "jest", "javascript"]
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "img": "./img/post-its.png",
     "alt": "Fancy Post-Its",
     "repo": "https://github.com/markdcross/fancy-post-its",
-    "app": "https://fancy-post-its.herokuapp.com/"
+    "app": "https://fancy-post-its.herokuapp.com/",
+    "tech": ["node", "express", "javascript"]
   },
   {
     "id": 5,
@@ -42,7 +46,18 @@
     "img": "./img/gitjobs.png",
     "alt": "GitJobs",
     "repo": "https://github.com/jallan07/gitjobs-application-tracker",
-    "app": "https://gitjobs-application-tracker.herokuapp.com/"
+    "app": "https://gitjobs-application-tracker.herokuapp.com/",
+    "tech": [
+      "node",
+      "express",
+      "javascript",
+      "mysql",
+      "jquery",
+      "bootstrap",
+      "animateonscroll",
+      "sequelize",
+      "passport"
+    ]
   },
   {
     "id": 6,
@@ -52,6 +67,7 @@
 
     "alt": "Eat Da Burger",
     "repo": "https://github.com/markdcross/burger",
-    "app": "https://bc-hw13-burger.herokuapp.com/"
+    "app": "https://bc-hw13-burger.herokuapp.com/",
+    "tech": ["node", "express", "javascript", "mysql", "jquery", "handlebars"]
   }
 ]

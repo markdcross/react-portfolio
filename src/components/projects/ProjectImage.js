@@ -8,7 +8,6 @@ const ProjectImage = ({ name, image, description, repo, app }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => setIsOpen(!isOpen);
-  console.log(isOpen);
 
   return (
     <motion.div
