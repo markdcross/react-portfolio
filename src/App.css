@@ -109,14 +109,6 @@ body {
     /* fix nav height on mobile safari, where 100vh is a little off */
     height: -webkit-fill-available;
 
-    /* then, arrange our links top to bottom */
-    display: flex;
-    flex-direction: column;
-    /* center links vertically, push to the right horizontally.
-       this means our links will line up with the rightward hamburger button */
-    justify-content: center;
-    align-items: center;
-
     /* add margins and padding to taste */
     margin: 0;
     padding-left: 7vw;
@@ -129,10 +121,25 @@ body {
     transform: translateY(-100%); /* move out of view */
     transition: transform 0.2s, opacity 0.2s; /* transition these smoothly */
   }
+
+  .dropdown-links {
+    /* then, arrange our links top to bottom */
+    display: flex;
+    flex-direction: column;
+    /* center links vertically, push to the right horizontally.
+       this means our links will line up with the rightward hamburger button */
+    justify-content: center;
+    align-items: center;
+    margin-top: 50%;
+    margin-left: 25%;
+    width: 50%;
+    background-color: #f2d2b6;
+  }
+
   .links {
     font-size: 2rem;
     font-weight: bold;
-    background-color: #f2d2b6;
+
     color: #143840;
   }
 

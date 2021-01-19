@@ -32,46 +32,48 @@ export const NavBar = () => {
         <i className='fas fa-bars'></i>{' '}
       </button>
       <div className='dropdown-link-container'>
-        <LinkContainer to='/'>
-          <Nav.Link className='links'>Home</Nav.Link>
-        </LinkContainer>
+        <div className='dropdown-links'>
+          <LinkContainer to='/'>
+            <Nav.Link className='links'>Home</Nav.Link>
+          </LinkContainer>
 
-        <LinkContainer to='/portfolio'>
-          <Nav.Link className='links'>Portfolio</Nav.Link>
-        </LinkContainer>
+          <LinkContainer to='/portfolio'>
+            <Nav.Link className='links'>Portfolio</Nav.Link>
+          </LinkContainer>
 
-        <Nav.Link
-          className='links'
-          href='https://drive.google.com/file/d/1dEob3eecP-uUu-rrFsUMKvKf-3f1CQZA/view?usp=sharing'
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          Resume
-        </Nav.Link>
+          <Nav.Link
+            className='links'
+            href='https://drive.google.com/file/d/1dEob3eecP-uUu-rrFsUMKvKf-3f1CQZA/view?usp=sharing'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            Resume
+          </Nav.Link>
 
-        <ContactModal />
+          <ContactModal />
 
-        <Nav.Link
-          href='https://github.com/markdcross'
-          target='_blank'
-          className='links'
-          rel='noreferrer noopener'
-        >
-          <span className='icon'>
-            <i className='fab fa-github'></i>
-          </span>
-        </Nav.Link>
+          <Nav.Link
+            href='https://github.com/markdcross'
+            target='_blank'
+            className='links'
+            rel='noreferrer noopener'
+          >
+            <span className='icon'>
+              <i className='fab fa-github'></i>
+            </span>
+          </Nav.Link>
 
-        <Nav.Link
-          href='https://www.linkedin.com/in/markdcross/'
-          target='_blank'
-          className='links'
-          rel='noreferrer noopener'
-        >
-          <span className='icon'>
-            <i className='fab fa-linkedin'></i>
-          </span>
-        </Nav.Link>
+          <Nav.Link
+            href='https://www.linkedin.com/in/markdcross/'
+            target='_blank'
+            className='links'
+            rel='noreferrer noopener'
+          >
+            <span className='icon'>
+              <i className='fab fa-linkedin'></i>
+            </span>
+          </Nav.Link>
+        </div>
       </div>
     </Navbar>
   );
