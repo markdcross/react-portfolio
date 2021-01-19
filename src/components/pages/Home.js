@@ -6,34 +6,6 @@ import Stack from '../info/Stack';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Home = () => {
-  // const [hideLanding, setHideLanding] = useState('');
-  // const [hideBio, setHideBio] = useState('hide');
-  // const [hideStack, setHideStack] = useState('hide');
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
-  // const handleScroll = event => {
-  //   if (window.scrollY < 150) {
-  //     setHideLanding('');
-  //     setHideBio('hide');
-  //     setHideStack('hide');
-  //   } else if (window.scrollY >= 150 && window.scrollY < 300) {
-  //     setHideLanding('hide');
-  //     setHideBio('');
-  //     setHideStack('hide');
-  //   } else {
-  //     setHideLanding('hide');
-  //     setHideBio('hide');
-  //     setHideStack('');
-  //   }
-  //   console.log(window.scrollY);
-  // };
-
   return (
     <Fragment>
       <ScrollAnimation
@@ -47,7 +19,7 @@ const Home = () => {
       <ScrollAnimation
         animateIn='fadeIn'
         animateOut='fadeOut'
-        offset={300}
+        offset={500}
         initiallyVisible={false}
       >
         <Bio />
@@ -55,7 +27,7 @@ const Home = () => {
       <ScrollAnimation
         animateIn='fadeIn'
         animateOut='fadeOut'
-        offset={300}
+        offset={500}
         initiallyVisible={false}
       >
         <Stack />

@@ -8,7 +8,6 @@ const ProjectDetail = ({ name, description, repo, app }) => {
       <Card.Title
         style={{
           color: '#143840',
-
           fontWeight: 'bold'
         }}
       >
