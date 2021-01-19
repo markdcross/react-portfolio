@@ -2,6 +2,7 @@ import React, { useState, Fragment } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import ContactInfo from './ContactInfo';
 // import ContactForm from './ContactForm';
+import Nav from 'react-bootstrap/Nav';
 
 function ContactModal() {
   const [show, setShow] = useState(false);
@@ -11,16 +12,9 @@ function ContactModal() {
 
   return (
     <Fragment>
-      <button
-        className='btn btn-link align-middle'
-        role='link'
-        type='submit'
-        name='op'
-        value='Link 1'
-        onClick={handleShow}
-      >
+      <Nav.Link className='links' onClick={handleShow}>
         Contact
-      </button>
+      </Nav.Link>
 
       <Modal show={show} onHide={handleClose} id='contactModal'>
         <Modal.Header closeButton>

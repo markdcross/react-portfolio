@@ -5,8 +5,29 @@ body {
   background-position: center;
 }
 
-.navbar {
+.nav {
   background-color: transparent !important;
+  max-width: 75%; /* should match the width of your website content */
+  display: flex;
+  align-items: center; /* center each of our links vertically */
+  margin: auto; /* center all our content horizontally when we exceed that max-width */
+}
+
+.logo {
+  margin-right: auto !important; /* push all our links to the right side, leaving the logo on the left */
+}
+
+.links {
+  display: inline-block !important;
+  color: #143840;
+}
+
+.dropdown-link-container > a {
+  margin-left: 20px; /* space out all our links */
+}
+
+.mobile-dropdown-toggle {
+  display: none; /* hide our hamburger button until we're on mobile */
 }
 
 .btn-link {
@@ -68,7 +89,58 @@ body {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 600px) {
+@media (max-width: 768px) {
+  /* arbitrary breakpoint, around the size of a tablet */
+  .logo,
+  .mobile-dropdown-toggle {
+    z-index: 2;
+  }
+
+  .mobile-dropdown-toggle {
+    display: initial; /* override that display: none attribute from before */
+  }
+  .dropdown-link-container {
+    /* first, make our dropdown cover the screen */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    /* fix nav height on mobile safari, where 100vh is a little off */
+    height: -webkit-fill-available;
+
+    /* then, arrange our links top to bottom */
+    display: flex;
+    flex-direction: column;
+    /* center links vertically, push to the right horizontally.
+       this means our links will line up with the rightward hamburger button */
+    justify-content: center;
+    align-items: center;
+
+    /* add margins and padding to taste */
+    margin: 0;
+    padding-left: 7vw;
+    padding-right: 7vw;
+
+    backdrop-filter: blur(4px);
+    z-index: 2; /* we're gonna avoid using -1 here, since it could position our navbar below other content on the page as well! */
+
+    opacity: 0; /* fade out */
+    transform: translateY(-100%); /* move out of view */
+    transition: transform 0.2s, opacity 0.2s; /* transition these smoothly */
+  }
+  .links {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #f2d2b6;
+    color: #143840;
+  }
+
+  nav.dropdown-opened > .dropdown-link-container {
+    opacity: 1; /* fade in */
+    transform: translateY(0); /* move into view */
+  }
+
   .mediaQuery {
     width: 100% !important;
     background-color: rgba(191, 178, 163, 1);

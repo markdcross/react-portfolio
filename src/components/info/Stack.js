@@ -5,12 +5,12 @@ import Col from 'react-bootstrap/Col';
 
 export const Stack = () => {
   return (
-    <Container className="stack">
+    <Container className='stack'>
       <Row>
         <Col>
-          <h1 class='title'>Languages & Frameworks</h1>
-          <h3 class='subtitle'>Dream it</h3>
-          <div class='content'>
+          <h1>Languages & Frameworks</h1>
+          <h3>Dream it</h3>
+          <div>
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -22,9 +22,9 @@ export const Stack = () => {
         </Col>
 
         <Col>
-          <h1 class='title'>Tools & Libraries</h1>
-          <h3 class='subtitle'>Build it</h3>
-          <div class='content'>
+          <h1>Tools & Libraries</h1>
+          <h3>Build it</h3>
+          <div>
             <ul>
               <li>Git & GitHub</li>
               <li>Bootstrap/Bulma/Materialize</li>
@@ -40,9 +40,9 @@ export const Stack = () => {
         </Col>
 
         <Col>
-          <h1 class='title'>Sales & Operations</h1>
-          <h3 class='subtitle'>Monetize it</h3>
-          <div class='content'>
+          <h1>Sales & Operations</h1>
+          <h3>Monetize it</h3>
+          <div>
             <ul>
               <li>Solutions Selling</li>
               <li>Challenger Selling</li>

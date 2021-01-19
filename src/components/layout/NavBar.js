@@ -1,63 +1,82 @@
-import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import Logo from './Logo';
 import ContactModal from '../contact/ContactModal';
+
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
 import { LinkContainer } from 'react-router-bootstrap';
 
-const NavBar = props => {
+export const NavBar = () => {
+  const [mobileNavOpened, setMobileNavOpened] = useState(false);
+  console.log(mobileNavOpened);
+
+  const location = useLocation(); // grab the current route with a React hook
+
+  const activeLocation = location.pathname;
+
+  // whenever "activeRoute" changes, hide our dropdown
+  // useEffect(() => {
+  //   setMobileNavOpened(false);
+  // }, [activeLocation]);
+
+  const toggleMobileNav = () => setMobileNavOpened(!mobileNavOpened);
+
   return (
-    <Navbar expand='lg' sticky='top' className='navbar'>
-      <Navbar.Brand>
+    <Navbar className={mobileNavOpened ? 'nav dropdown-opened' : 'nav'}>
+      <Navbar.Brand className='logo' href='/'>
         <Logo logo='../img/logo.png' logoAlt="Mark's logo" />
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls='responsive-navbar-nav' />
-      <Navbar.Collapse id='responsive-navbar-nav'>
-        <Nav className='ml-auto' activeKey={window.location.pathname}>
-          {/* Links */}
+      <button
+        className='mobile-dropdown-toggle'
+        aria-hidden='true'
+        onClick={toggleMobileNav}
+      >
+        <i className='fas fa-bars'></i>{' '}
+      </button>
+      <div className='dropdown-link-container'>
+        <LinkContainer to='/'>
+          <Nav.Link className='links'>Home</Nav.Link>
+        </LinkContainer>
 
-          <LinkContainer to='/'>
-            <Nav.Link className='btn-link'>Home</Nav.Link>
-          </LinkContainer>
+        <LinkContainer to='/portfolio'>
+          <Nav.Link className='links'>Portfolio</Nav.Link>
+        </LinkContainer>
 
-          <LinkContainer to='/portfolio'>
-            <Nav.Link className='btn-link'>Portfolio</Nav.Link>
-          </LinkContainer>
+        <Nav.Link
+          className='links'
+          href='https://drive.google.com/file/d/1dEob3eecP-uUu-rrFsUMKvKf-3f1CQZA/view?usp=sharing'
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          Resume
+        </Nav.Link>
 
-          <Nav.Link
-            href='https://drive.google.com/file/d/1dEob3eecP-uUu-rrFsUMKvKf-3f1CQZA/view?usp=sharing'
-            target='_blank'
-            rel='noreferrer noopener'
-            className='btn-link'
-          >
-            Resume
-          </Nav.Link>
+        <ContactModal />
 
-          <ContactModal />
+        <Nav.Link
+          href='https://github.com/markdcross'
+          target='_blank'
+          className='links'
+          rel='noreferrer noopener'
+        >
+          <span className='icon'>
+            <i className='fab fa-github'></i>
+          </span>
+        </Nav.Link>
 
-          <Nav.Link
-            href='https://github.com/markdcross'
-            target='_blank'
-            className='btn-link button ctcLinks'
-            rel='noreferrer noopener'
-          >
-            <span className='icon'>
-              <i className='fab fa-github'></i>
-            </span>
-          </Nav.Link>
-
-          <Nav.Link
-            href='https://www.linkedin.com/in/markdcross/'
-            target='_blank'
-            className='btn-link button ctcLinks'
-            rel='noreferrer noopener'
-          >
-            <span className='icon'>
-              <i className='fab fa-linkedin'></i>
-            </span>
-          </Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
+        <Nav.Link
+          href='https://www.linkedin.com/in/markdcross/'
+          target='_blank'
+          className='links'
+          rel='noreferrer noopener'
+        >
+          <span className='icon'>
+            <i className='fab fa-linkedin'></i>
+          </span>
+        </Nav.Link>
+      </div>
     </Navbar>
   );
 };
