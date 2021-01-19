@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Image from 'react-bootstrap/Image';
 
 const FilterIcon = ({ filter, filterName }) => {
+  // TODO on hover, textshadow goldish
   return (
     <Fragment>
       <Image

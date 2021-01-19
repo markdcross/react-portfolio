@@ -5,7 +5,7 @@ import Image from 'react-bootstrap/Image';
 
 const Bio = () => {
   return (
-    <Container>
+    <Container className='bioBlock'>
       <Row>
         <article className='col-md-12'>
           <Image src='img/headshot.png' alt='headshot' roundedCircle />

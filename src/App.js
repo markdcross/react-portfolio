@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/layout/NavBar';
 import Home from './components/pages/Home';
@@ -10,12 +11,12 @@ function App() {
   return (
     <Router>
       <NavBar />
-
-      <Switch>
-        <Route exact path='/' component={Home} />
-        <Route exact path='/portfolio' component={Portfolio} />
-      </Switch>
-
+      <Jumbotron className='jumbotron'>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/portfolio' component={Portfolio} />
+        </Switch>
+      </Jumbotron>
       <Footer />
     </Router>
   );

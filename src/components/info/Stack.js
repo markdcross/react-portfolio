@@ -3,9 +3,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-export const Stack = () => {
+export const Stack = ({ hide }) => {
   return (
-    <Container className='stack'>
+    <Container className='stackBlock'>
       <Row>
         <Col>
           <h1>Languages & Frameworks</h1>

@@ -5,6 +5,10 @@ body {
   background-position: center;
 }
 
+.hide {
+  display: none;
+}
+
 .nav {
   background-color: transparent !important;
   max-width: 75%; /* should match the width of your website content */
@@ -15,6 +19,25 @@ body {
 
 .logo {
   margin-right: auto !important; /* push all our links to the right side, leaving the logo on the left */
+}
+
+.modal-content {
+  text-align: center;
+}
+
+.modal-header {
+  background-color: #f2d2b6;
+  color: #143840;
+  border-bottom: none !important;
+}
+
+.modal-body {
+  background-color: #f2d2b6;
+  color: #143840;
+}
+
+.modal-body a {
+  color: #436573;
 }
 
 .links {
@@ -35,12 +58,18 @@ body {
 }
 
 .landingBlock {
-  margin-top: 10%;
+  margin-top: 12%;
   margin-bottom: 15%;
 }
 
-.stack {
-  margin-bottom: 10%;
+.bioBlock {
+  margin-top: 15%;
+  margin-bottom: 12%;
+}
+
+.stackBlock {
+  margin-top: 12%;
+  margin-bottom: 15%;
 }
 
 .jumbotron {

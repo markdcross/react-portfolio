@@ -16,9 +16,9 @@ function ContactModal() {
         Contact
       </Nav.Link>
 
-      <Modal show={show} onHide={handleClose} id='contactModal'>
+      <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Give me a shout</Modal.Title>
+          <Modal.Title>Give me a shout:</Modal.Title>
         </Modal.Header>
 
         <Modal.Body>
