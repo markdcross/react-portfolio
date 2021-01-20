@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import NavBar from './components/layout/NavBar';
 import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
@@ -9,7 +10,7 @@ import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <NavBar />
       <Jumbotron className='jumbotron'>
         <Switch>
@@ -18,7 +19,7 @@ function App() {
         </Switch>
       </Jumbotron>
       <Footer />
-    </Router>
+    </HashRouter>
   );
 }
 
