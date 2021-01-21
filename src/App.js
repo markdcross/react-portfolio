@@ -15,6 +15,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/portfolio' component={Portfolio} />
+          <Route  path='/*' component={Home} />
         </Switch>
       </Jumbotron>
       <Footer />
