@@ -23,7 +23,14 @@ export const NavBar = () => {
         aria-hidden='true'
         onClick={toggleMobileNav}
       >
-        <i className='fas fa-bars'></i>{' '}
+        <div
+          id='nav-icon1'
+          className={mobileNavOpened ? 'nav dropdown-opened' : 'nav'}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </button>
 
       <div className='dropdown-link-container'>
