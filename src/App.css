@@ -163,6 +163,7 @@ body {
 }
 .projectContainer {
   overflow: auto;
+  z-index: 2;
 }
 .compactCard {
   display: inline-flex;
@@ -215,7 +216,7 @@ body {
   /* arbitrary breakpoint, around the size of a tablet */
   .logo,
   .mobile-dropdown-toggle {
-    z-index: 2;
+    z-index: 4;
   }
   .nav {
     padding-top: 2.5rem;
@@ -241,7 +242,7 @@ body {
     padding-right: 7vw;
 
     backdrop-filter: blur(4px);
-    z-index: 2; /* we're gonna avoid using -1 here, since it could position our navbar below other content on the page as well! */
+    z-index: 3; /* we're gonna avoid using -1 here, since it could position our navbar below other content on the page as well! */
 
     opacity: 0; /* fade out */
     transform: translateY(-100%); /* move out of view */
