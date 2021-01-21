@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Logo from './Logo';
 import ContactModal from '../contact/ContactModal';
+import Hamburger from './Hamburger';
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -18,20 +19,7 @@ export const NavBar = () => {
         <Logo logo='../img/logo2.jpg' logoAlt="Mark's logo" />
       </Navbar.Brand>
 
-      <button
-        className='mobile-dropdown-toggle'
-        aria-hidden='true'
-        onClick={toggleMobileNav}
-      >
-        <div
-          id='nav-icon1'
-          className={mobileNavOpened ? 'nav dropdown-opened' : 'nav'}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
+      <Hamburger toggleMobileNav={toggleMobileNav} opened={mobileNavOpened} />
 
       <div className='dropdown-link-container'>
         <div className='dropdown-links'>

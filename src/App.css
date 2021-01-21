@@ -161,7 +161,9 @@ body {
 .magnifyBtn:active {
   transform: scale(0.9);
 }
-
+.projectContainer {
+  overflow: auto;
+}
 .compactCard {
   display: inline-flex;
   text-align: center;
