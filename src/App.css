@@ -192,8 +192,7 @@ body {
        this means our links will line up with the rightward hamburger button */
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
-    margin-left: 25%;
+    margin-top: 25%;
     width: 100%;
     background-color: #f2d2b6;
     padding: 2rem;

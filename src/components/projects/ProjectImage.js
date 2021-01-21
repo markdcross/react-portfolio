@@ -4,7 +4,8 @@ import ProjectDetail from './ProjectDetail';
 
 import { motion, AnimatePresence } from 'framer-motion';
 
-const ProjectImage = ({ name, image, description, repo, app }) => {
+const ProjectImage = ({ projectInfo }) => {
+  const { name, image, description, repo, app } = projectInfo;
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => setIsOpen(!isOpen);

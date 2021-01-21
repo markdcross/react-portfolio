@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState } from 'react';
 import Logo from './Logo';
 import ContactModal from '../contact/ContactModal';
 
@@ -12,18 +11,13 @@ export const NavBar = () => {
   const toggleMobileNav = () => setMobileNavOpened(!mobileNavOpened);
 
   //* Dismiss navbar on link click
-  // grab the current route with a React hook
-  const location = useLocation();
-  // whenever "location" changes, hide our dropdown
-  useEffect(() => {
-    setMobileNavOpened(false);
-  }, [location]);
 
   return (
     <Navbar className={mobileNavOpened ? 'nav dropdown-opened' : 'nav'}>
       <Navbar.Brand className='logo' href='/'>
         <Logo logo='../img/logo.png' logoAlt="Mark's logo" />
       </Navbar.Brand>
+
       <button
         className='mobile-dropdown-toggle'
         aria-hidden='true'
@@ -31,14 +25,19 @@ export const NavBar = () => {
       >
         <i className='fas fa-bars'></i>{' '}
       </button>
+
       <div className='dropdown-link-container'>
         <div className='dropdown-links'>
           <LinkContainer to='/'>
-            <Nav.Link className='links'>Home</Nav.Link>
+            <Nav.Link className='links' onClick={toggleMobileNav}>
+              Home
+            </Nav.Link>
           </LinkContainer>
 
           <LinkContainer to='/portfolio'>
-            <Nav.Link className='links'>Portfolio</Nav.Link>
+            <Nav.Link className='links' onClick={toggleMobileNav}>
+              Portfolio
+            </Nav.Link>
           </LinkContainer>
 
           <Nav.Link
