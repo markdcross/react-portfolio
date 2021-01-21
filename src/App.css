@@ -58,6 +58,49 @@ body {
   display: none; /* hide our hamburger button until we're on mobile */
 }
 
+.arrowBounce {
+  position: relative;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.arrowScrollDown {
+  animation: arrowAnimation 1.5s infinite ease-out;
+}
+
+@keyframes arrowAnimation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+
 .landingBlock {
   margin-top: 10%;
   margin-bottom: 15%;
@@ -99,9 +142,24 @@ body {
 
 .filterIcon {
   cursor: pointer;
-  height: 3rem;
+  max-height: 4rem;
   margin: 1rem;
   justify-content: center;
+}
+
+.magnifyBtn {
+  padding: 12px 24px;
+  background-color: hsl(222, 100%, 95%);
+  border-radius: 6px;
+  transition: transform 250ms ease-in-out;
+}
+
+.magnifyBtn:hover {
+  transform: scale(1.1);
+}
+
+.magnifyBtn:active {
+  transform: scale(0.9);
 }
 
 .compactCard {

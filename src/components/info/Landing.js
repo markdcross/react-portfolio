@@ -27,10 +27,10 @@ const Landing = () => {
       >
         <h3>
           Get to know me below.&nbsp;
-          <i className={`far fa-hand-point-down`}></i>
+          <i className={`far fa-hand-point-down arrowBounce`}></i>
           <br />
           Check out my work and get in touch above.&nbsp;
-          <i className={`far fa-hand-point-up`}></i>
+          <i className={`far fa-hand-point-up arrowBounce`}></i>
         </h3>
       </ScrollAnimation>
     </Container>

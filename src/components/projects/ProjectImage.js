@@ -5,7 +5,7 @@ import ProjectDetail from './ProjectDetail';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ProjectImage = ({ projectInfo }) => {
-  const { name, image, description, repo, app } = projectInfo;
+  const { name, img, description, repo, app } = projectInfo;
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => setIsOpen(!isOpen);
@@ -17,7 +17,7 @@ const ProjectImage = ({ projectInfo }) => {
       className={isOpen ? 'expandedCard' : 'compactCard'}
     >
       <Card>
-        <Card.Img src={image} alt={name} />
+        <Card.Img src={img} alt={name} />
         <AnimatePresence>
           {isOpen && (
             <Card.ImgOverlay

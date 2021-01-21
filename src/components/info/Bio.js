@@ -26,7 +26,7 @@ const Bio = () => {
             </p>
           </div>
           <i
-            className='far fa-hand-point-down mobileHide'
+            className='far fa-hand-point-down mobileHide arrowScrollDown'
             style={{ fontSize: '2rem', color: '#143840' }}
           ></i>
         </article>
