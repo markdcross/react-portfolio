@@ -289,9 +289,7 @@ body {
     width: 100% !important;
     background-color: #f2d2b6;
   }
-  .mobileHide {
-    display: none;
-  }
+
   body {
     background-image: none;
     color: #143840;
