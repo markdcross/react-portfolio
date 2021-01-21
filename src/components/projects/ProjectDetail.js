@@ -8,7 +8,7 @@ const ProjectDetail = ({ name, description, repo, app }) => {
       <Card.Title
         style={{
           color: '#143840',
-          fontWeight: 'bold',
+          fontWeight: '800',
           fontFamily: `'Montserrat', sans-serif`
         }}
       >
@@ -17,7 +17,7 @@ const ProjectDetail = ({ name, description, repo, app }) => {
       <Card.Text
         style={{
           color: '#143840',
-          fontWeight: 'bold',
+          fontWeight: '600',
           fontFamily: `'Montserrat', sans-serif`
         }}
       >

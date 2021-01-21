@@ -12,7 +12,7 @@ export const CardButton = ({ text, href }) => {
         rel='noreferrer noopener'
         style={{
           color: '#BFB2A3',
-          fontWeight: 'bold',
+          fontWeight: '600',
           fontFamily: `'Montserrat', sans-serif`
         }}
       >
