@@ -187,10 +187,6 @@ body {
   border-radius: 1rem;
   padding: 2rem;
 }
-.projectDetail p,
-.projectDetail h5 {
-  font-family: 'Montserrat', sans-serif;
-}
 
 .credits a {
   color: #7d8c8b;
@@ -291,7 +287,12 @@ body {
   .headshot {
     max-width: 40%;
   }
-
+  .projectDetail {
+    background-color: #7d8c8b;
+    border-radius: 1rem;
+    padding: 0;
+    justify-content: center;
+  }
   .mediaQuery {
     width: 100% !important;
     background-color: #f2d2b6;

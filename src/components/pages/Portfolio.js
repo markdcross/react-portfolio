@@ -3,7 +3,6 @@ import ProjectImage from '../projects/ProjectImage';
 import ProjectFilter from '../projects/ProjectFilter';
 import projects from '../projects/projects.json';
 
-import Container from 'react-bootstrap/Container';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { AnimateSharedLayout } from 'framer-motion';
 
@@ -39,18 +38,16 @@ const Portfolio = () => {
       <ProjectFilter filter={setFilterState} />
 
       <hr />
-      <Container className='projectContainer'>
-        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
-          {projectState.filteredProjectList.map(projectInfo => (
-            <ProjectImage
-              layout
-              projectInfo={projectInfo}
-              key={projectInfo.id}
-              layoutId='projects'
-            />
-          ))}
-        </ScrollAnimation>
-      </Container>
+      <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
+        {projectState.filteredProjectList.map(projectInfo => (
+          <ProjectImage
+            layout
+            projectInfo={projectInfo}
+            key={projectInfo.id}
+            layoutId='projects'
+          />
+        ))}
+      </ScrollAnimation>
     </AnimateSharedLayout>
   );
 };
