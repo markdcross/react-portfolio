@@ -12,9 +12,10 @@ export const Stack = () => {
           <h3>Dream it</h3>
           <hr />
           <ul>
+            <li>React</li>
+            <li>JavaScript</li>
             <li>HTML</li>
             <li>CSS</li>
-            <li>JavaScript</li>
             <li>SQL</li>
             <li>NoSQL</li>
           </ul>
@@ -29,6 +30,7 @@ export const Stack = () => {
             <li>Git & GitHub</li>
             <li>Bootstrap/Bulma/Materialize</li>
             <li>jQuery/AJAX</li>
+            <li>Progressive Web Apps</li>
             <li>Node.js/Express</li>
             <li>MySQL/MongoDB</li>
             <li>Sequelize/Mongoose</li>
