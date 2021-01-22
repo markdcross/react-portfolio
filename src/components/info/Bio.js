@@ -9,7 +9,7 @@ const Bio = () => {
       <Row>
         <article className='col-md-12'>
           <Image
-            src='img/headshot.png'
+            src='img/tinified/headshot.png'
             alt='headshot'
             className='headshot'
             roundedCircle

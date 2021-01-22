@@ -16,7 +16,7 @@ export const NavBar = () => {
   return (
     <Navbar className={mobileNavOpened ? 'nav dropdown-opened' : 'nav'}>
       <Navbar.Brand className='logo' href='/'>
-        <Logo logo='../img/logo2.jpg' logoAlt="Mark's logo" />
+        <Logo logo='../img/tinified/logo2.jpg' logoAlt="Mark's logo" />
       </Navbar.Brand>
 
       <Hamburger toggleMobileNav={toggleMobileNav} opened={mobileNavOpened} />
