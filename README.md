@@ -1,5 +1,4 @@
-
-# Mark Cross - Welcome to my Portfolio!
+# [Mark Cross](https://www.markdcross.dev/) - Welcome to my Portfolio!
 
 This page will be frequently updated as I continue to grow as a developer - check back frequently!
 
@@ -7,27 +6,26 @@ It currently features a clear, clean, and engaging experience with intuitive nav
 
 The second page is my portfolio, including links to the deployed app and repo of a few of my recent projects.
 
-My résumé is linked (update also pending), and a modal including a contact form and my direct information is available as well.
+My résumé is linked, and a modal with my contact information is available as well.
 
 Thanks for taking a look!
 
 # Technology
 
+- React
+- React-Bootstrap
+- JavaScript
 - HTML
 - CSS
-- Bootstrap
-- JavaScript
-- jQuery
-- Animate.css
-- Node.js
-- Express
-- EJS
-- Digital Ocean
+- Animate on Scroll
+- Framer Motion
+- React Reveal
+- Netlify
 
 # Screenshots
 
-![landing page](./public/img/ss-landing.png)
-
+![landing page](./public/img/screenshot1.png)
+![portfolio page](./public/img/screenshot2.png)
 
 # Reach out to me!
 
@@ -36,7 +34,7 @@ Feel free to get in touch:
 - <markdcross@gmail.com>
 - [LinkedIn](https://www.linkedin.com/in/markdcross/)
 - [GitHub](https://github.com/markdcross)  
-Cover Photo by Z S on Unsplash
+  Cover Photo by Z S on Unsplash
 
 # License
 
