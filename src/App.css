@@ -137,6 +137,18 @@ body {
   margin-bottom: 15%;
 }
 
+.stackCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stackUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .jumbotron {
   background: transparent;
   text-align: center;

@@ -7,36 +7,11 @@ export const Stack = () => {
   return (
     <Container className='stackBlock'>
       <Row>
-        <Col className='stackCol'>
+        <Col>
           <h1>Languages & Frameworks</h1>
-        </Col>
-        <Col className='stackCol'>
-          <h1>
-            Tools & <br />
-            Libraries
-          </h1>
-        </Col>
-        <Col className='stackCol'>
-          <h1>Sales & Operations</h1>
-        </Col>
-      </Row>
-      <hr />
-      <Row>
-        <Col className='stackCol'>
           <h3>Dream it</h3>
-        </Col>
-        <Col className='stackCol'>
-          <h3>Build it</h3>
-        </Col>
-        <Col className='stackCol'>
-          <h3>Monetize it</h3>
-        </Col>
-      </Row>
-
-      <hr />
-      <Row>
-        <Col className='stackCol'>
-          <ul className='stackUl'>
+          <hr />
+          <ul style={{ listStyleType: 'none' }}>
             <li>React</li>
             <li>JavaScript</li>
             <li>HTML</li>
@@ -44,9 +19,14 @@ export const Stack = () => {
             <li>SQL</li>
             <li>NoSQL</li>
           </ul>
+          <hr />
         </Col>
-        <Col className='stackCol'>
-          <ul className='stackUl'>
+        <Col>
+          <h1>Tools & Libraries</h1>
+          <h3>Build it</h3>
+          <hr />
+
+          <ul style={{ listStyleType: 'none' }}>
             <li>Git & GitHub</li>
             <li>Bootstrap/Bulma/Materialize</li>
             <li>jQuery/AJAX</li>
@@ -58,9 +38,14 @@ export const Stack = () => {
             <li>Postman</li>
             <li>Heroku/Netlify/Digital Ocean</li>
           </ul>
+          <hr />
         </Col>
-        <Col className='stackCol'>
-          <ul className='stackUl'>
+        <Col>
+          <h1>Sales & Operations</h1>
+          <h3>Monetize it</h3>
+          <hr />
+
+          <ul style={{ listStyleType: 'none', margin: '0', padding: '0' }}>
             <li>Solutions Selling</li>
             <li>Challenger Selling</li>
             <li>Lean Six Sigma Yellow Belt</li>
@@ -69,6 +54,7 @@ export const Stack = () => {
             <li>Marketing automation platforms</li>
             <li>Sales enablement platforms</li>
           </ul>
+          <hr />
         </Col>
       </Row>
     </Container>
