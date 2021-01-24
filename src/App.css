@@ -1,5 +1,5 @@
 * {
-  font-family: 'Tienne', serif;
+  font-family: 'Poppins', sans-serif;
   color: #143840;
 }
 
@@ -102,16 +102,22 @@ body {
 }
 
 .landingBlock {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 15%;
 }
 
 .landingMargin {
   margin-bottom: 3rem;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .landingBlock h1 {
-  font-size: 6rem;
+  font-size: 8rem;
+  color: #143840;
+}
+
+.landingBlock h2 {
+  font-size: 3rem;
   color: #143840;
 }
 
@@ -204,7 +210,6 @@ body {
   justify-content: center;
   z-index: -1;
   background-color: rgba(67, 101, 115, 0.25);
-  font-family: 'Montserrat', sans-serif;
 }
 
 /* Media Queries */
