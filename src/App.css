@@ -314,7 +314,9 @@ body {
     width: 100% !important;
     background-color: #f2d2b6;
   }
-
+  .hideMobile {
+    display: none;
+  }
   body {
     background-image: none;
     color: #143840;
