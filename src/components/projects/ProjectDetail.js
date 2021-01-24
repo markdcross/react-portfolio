@@ -9,8 +9,7 @@ const ProjectDetail = ({ name, description, repo, app }) => {
         className='mediaQuery'
         style={{
           color: '#143840',
-          fontWeight: '800',
-          fontFamily: `'Montserrat', sans-serif`
+          fontWeight: 'bold'
         }}
       >
         {name}
@@ -18,16 +17,14 @@ const ProjectDetail = ({ name, description, repo, app }) => {
       <Card.Text
         className='mediaQuery'
         style={{
-          color: '#143840',
-          fontWeight: '600',
-          fontFamily: `'Montserrat', sans-serif`
+          color: '#143840'
         }}
       >
         {description}
       </Card.Text>
 
       <CardButton text='See the Code' href={repo} />
-      <CardButton text='See it Live' href={app} />
+      <CardButton text='See It Live' href={app} />
     </div>
   );
 };
