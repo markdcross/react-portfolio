@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Landing from '../info/Landing';
 import Bio from '../info/Bio';
 import Stack from '../info/Stack';
+import StackMobile from '../info/StackMobile';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -24,6 +25,7 @@ const Home = () => {
         initiallyVisible={false}
       >
         <Stack />
+        <StackMobile />
       </ScrollAnimation>
     </Fragment>
   );
