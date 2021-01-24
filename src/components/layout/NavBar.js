@@ -37,7 +37,7 @@ export const NavBar = () => {
 
           <Nav.Link
             className='links'
-            href='https://drive.google.com/file/d/1s8e7U0Im9T7QM-llLo9dkJ3AbRxdPTBY/view?usp=sharing'
+            href='https://drive.google.com/file/d/1Rxnp-pGEktrIgEwlOi012DxAKfzH4Yqj/view?usp=sharing'
             target='_blank'
             rel='noreferrer noopener'
           >
