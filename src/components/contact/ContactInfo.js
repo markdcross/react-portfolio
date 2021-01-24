@@ -20,6 +20,16 @@ export const ContactInfo = () => {
         Put time on my calendar
       </a>
       <br />
+      Card:&nbsp;
+      <code
+        style={{
+          backgroundColor: 'grey',
+          color: 'navy'
+        }}
+      >
+        &nbsp;npx markdcross&nbsp;
+      </code>
+      <br />
     </p>
   );
 };
