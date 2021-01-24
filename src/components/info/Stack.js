@@ -80,7 +80,7 @@ export const Stack = () => {
             <h1>Languages & Frameworks</h1>
             <h3>Dream it</h3>
             <hr />
-            <ul style={{ listStyleType: 'none' }}>
+            <ul className='stackUl'>
               <li>React</li>
               <li>JavaScript</li>
               <li>HTML</li>
@@ -95,7 +95,7 @@ export const Stack = () => {
             <h3>Build it</h3>
             <hr />
 
-            <ul style={{ listStyleType: 'none' }}>
+            <ul className='stackUl'>
               <li>Git & GitHub</li>
               <li>Bootstrap/Bulma/Materialize</li>
               <li>jQuery/AJAX</li>
@@ -114,7 +114,7 @@ export const Stack = () => {
             <h3>Monetize it</h3>
             <hr />
 
-            <ul style={{ listStyleType: 'none', margin: '0', padding: '0' }}>
+            <ul className='stackUl'>
               <li>Solutions Selling</li>
               <li>Challenger Selling</li>
               <li>Lean Six Sigma Yellow Belt</li>
