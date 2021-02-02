@@ -3,6 +3,7 @@ import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './components/layout/NavBar';
+
 import Home from './components/pages/Home';
 import Portfolio from './components/pages/Portfolio';
 import Footer from './components/layout/Footer';

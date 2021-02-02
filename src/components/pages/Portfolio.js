@@ -7,10 +7,17 @@ import Container from 'react-bootstrap/Container';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { AnimateSharedLayout } from 'framer-motion';
 
+// Loading
+import FadeIn from 'react-fade-in';
+import Lottie from 'react-lottie';
+import ReactLoading from 'react-loading';
+
+// State
 const Portfolio = () => {
   const [projectState, setProjectState] = useState({
     projectList: projects,
-    filteredProjectList: projects
+    filteredProjectList: projects,
+    loading: true
   });
   const [filterState, setFilterState] = useState('');
 
@@ -25,33 +32,45 @@ const Portfolio = () => {
           // allow users to search by tech
           project.tech.toString().toLowerCase().indexOf(filterState) !== -1
         );
-      })
+      }),
+      loading: false
     });
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filterState]);
 
   return (
-    <AnimateSharedLayout>
-      <h1>Recent Projects</h1>
-      <hr />
+    <div>
+      {projectState.loading ? (
+        <ReactLoading
+          type={'bars'}
+          color={'white'}
+          style={{ alignContent: 'center' }}
+        />
+      ) : (
+        <AnimateSharedLayout>
+          <h1>Recent Projects</h1>
+          <hr />
 
-      <ProjectFilter filter={setFilterState} />
+          <ProjectFilter filter={setFilterState} />
 
-      <hr />
-      <Container>
-        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
-          {projectState.filteredProjectList.map(projectInfo => (
-            <ProjectImage
-              layout
-              projectInfo={projectInfo}
-              key={projectInfo.id}
-              layoutId='projects'
-            />
-          ))}
-        </ScrollAnimation>
-      </Container>
-    </AnimateSharedLayout>
+          <hr />
+          <Container>
+            <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
+              {projectState.filteredProjectList.map(projectInfo => (
+                <ProjectImage
+                  layout
+                  projectInfo={projectInfo}
+                  key={projectInfo.id}
+                  layoutId='projects'
+                />
+              ))}
+            </ScrollAnimation>
+          </Container>
+        </AnimateSharedLayout>
+      )}
+    </div>
   );
 };
+
 export default Portfolio;
