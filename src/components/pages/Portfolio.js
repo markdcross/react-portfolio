@@ -8,8 +8,6 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import { AnimateSharedLayout } from 'framer-motion';
 
 // Loading
-import FadeIn from 'react-fade-in';
-import Lottie from 'react-lottie';
 import ReactLoading from 'react-loading';
 
 // State
