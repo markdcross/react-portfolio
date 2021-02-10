@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Perspektiv (v2)",
     "description": "Get to know the beautifully weird city of Richmond through its murals and food via a web application integrating multiple server-side APIs to display information about the city's art and food scenes.",
-    "img": "./img/tinified/perspektiv.png",
+    "img": "./img/tinified/perspektiv2.png",
     "alt": "Perspektiv",
     "repo": "https://github.com/markdcross/perspektiv-v2",
     "app": "https://perspektivrva.com",
