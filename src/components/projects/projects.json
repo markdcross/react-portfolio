@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Perspektiv (v2)",
-    "description": "Get to know the beautifully weird city of Richmond through its murals and food via a web application integrating multiple server-side APIs to display information about the city's art and food scenes.",
+    "description": "Get to know the beautifully weird city of Richmond through its murals and food. Powered by React on the front-end, this app leverages curated mural data stored in MongoDB. The user is able to track visited murals and 'level up' by visiting new ones, get directions to murals, post photos at the murals, see nearby restaurants, and more!",
     "img": "./img/perspektiv2.png",
     "alt": "Perspektiv",
     "repo": "https://github.com/markdcross/perspektiv-v2",
