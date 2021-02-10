@@ -179,6 +179,10 @@ body {
 .magnifyBtn:active {
   transform: scale(0.9);
 }
+
+.recentProjects {
+  font-family: 'Permanent Marker', cursive;
+}
 .projectContainer {
   overflow: auto;
   z-index: 2;

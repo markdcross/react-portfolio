@@ -47,7 +47,7 @@ const Portfolio = () => {
         />
       ) : (
         <AnimateSharedLayout>
-          <h1>Recent Projects</h1>
+          <h1 className='recentProjects'>Recent Projects</h1>
           <hr />
 
           <ProjectFilter filter={setFilterState} />
