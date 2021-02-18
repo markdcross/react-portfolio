@@ -6,7 +6,7 @@
     "img": "./img/perspektiv2.png",
     "alt": "Perspektiv",
     "repo": "https://github.com/markdcross/perspektiv-v2",
-    "app": "https://perspektivrva.com",
+    "app": "https://obscure-citadel-58789.herokuapp.com/",
     "tech": ["react", "javascript", "mongodb", "nodejs"]
   },
   {
