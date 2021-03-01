@@ -17,8 +17,7 @@ const Bio = () => {
           <div>
             <h1>Who is that handsome devil?</h1>
             <p>
-              I'm Mark Cross and I'm enrolled in the University of Richmond
-              Coding Bootcamp. Born and raised in Annapolis, MD, graduate of the
+              I'm Mark Cross and I'm a full-stack JavaScript Web Developer. Born and raised in Annapolis, MD, graduate of the
               University of Delaware (go Blue Hens 🐓), and now Richmond local.
               I've spent my career in sales and sales leadership, having
               recently served as the head of sales for Richmond-based startup,
