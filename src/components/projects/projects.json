@@ -7,7 +7,12 @@
     "alt": "Perspektiv",
     "repo": "https://github.com/markdcross/perspektiv-v2",
     "app": "https://obscure-citadel-58789.herokuapp.com/",
-    "tech": ["react", "javascript", "mongodb", "nodejs"]
+    "tech": [
+      "react",
+      "javascript",
+      "mongodb",
+      "nodejs"
+    ]
   },
   {
     "id": 2,
@@ -17,7 +22,11 @@
     "alt": "Perspektiv",
     "repo": "https://github.com/markdcross/perspektiv",
     "app": "https://markdcross.github.io/perspektiv/",
-    "tech": ["jquery", "materialize", "javascript"]
+    "tech": [
+      "jquery",
+      "materialize",
+      "javascript"
+    ]
   },
   {
     "id": 3,
@@ -27,7 +36,11 @@
     "alt": "React Employee Directory",
     "repo": "https://github.com/markdcross/react-employee-directory",
     "app": "https://wonderful-wiles-5374b9.netlify.app/",
-    "tech": ["react", "axios", "javascript"]
+    "tech": [
+      "react",
+      "axios",
+      "javascript"
+    ]
   },
   {
     "id": 4,
@@ -37,7 +50,11 @@
     "alt": "8-bit Engineers",
     "repo": "https://github.com/markdcross/8-bit-engineers",
     "app": "https://github.com/markdcross/8-bit-engineers",
-    "tech": ["nodejs", "jest", "javascript"]
+    "tech": [
+      "nodejs",
+      "jest",
+      "javascript"
+    ]
   },
   {
     "id": 5,
@@ -47,7 +64,11 @@
     "alt": "Fancy Post-Its",
     "repo": "https://github.com/markdcross/fancy-post-its",
     "app": "https://fancy-post-its.herokuapp.com/",
-    "tech": ["nodejs", "express", "javascript"]
+    "tech": [
+      "nodejs",
+      "express",
+      "javascript"
+    ]
   },
   {
     "id": 6,
@@ -74,10 +95,16 @@
     "name": "Eat Da Burger",
     "description": "A burger logger with MySQL, Node, Express, Handlebars and a custom ORM. Following the MVC design pattern, I've used Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
     "img": "./img/tinified/burger.png",
-
     "alt": "Eat Da Burger",
     "repo": "https://github.com/markdcross/burger",
     "app": "https://bc-hw13-burger.herokuapp.com/",
-    "tech": ["nodejs", "express", "javascript", "mysql", "jquery", "handlebars"]
+    "tech": [
+      "nodejs",
+      "express",
+      "javascript",
+      "mysql",
+      "jquery",
+      "handlebars"
+    ]
   }
 ]
