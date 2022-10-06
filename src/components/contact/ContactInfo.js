@@ -11,7 +11,7 @@ export const ContactInfo = () => {
             <br/>
             Calendly:
             <a
-                href='https://calendly.com/markdcross/15min'
+                href='https://calendly.com/markdcross/30min'
                 target='_blank'
                 className='calendly'
                 rel='noreferrer noopener'
