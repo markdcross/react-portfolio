@@ -1,0 +1,28 @@
+{
+  "Language": {
+    "headline": "Languages &  Frameworks",
+    "tag": "Dream it",
+    "items": [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "C#",
+      "HTML",
+      "CSS",
+      "SQL Server",
+      "PostgreSQL",
+      "NoSQL"
+    ]
+  },
+  "Tools": {
+    "headline": "Tools & Libraries",
+    "tag": "Build it",
+    "items": [
+      "Azure DevOps",
+      "AWS",
+      "Serverless",
+      "Microservices",
+      "Jest/Mocha/Cypress/Webdriver.io"
+    ]
+  }
+}
