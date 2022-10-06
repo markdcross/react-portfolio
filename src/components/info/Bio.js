@@ -15,14 +15,18 @@ const Bio = () => {
                         roundedCircle
                     />
                     <div>
-                        <h1>Who is that handsome devil?</h1>
-                        <p>
-                            I'm Mark Cross and I'm a full-stack JavaScript Web Developer. Born
+                        <h1 className='mt-3'>Who is that handsome devil?</h1>
+                        <p className='mt-4'>
+                            I'm Mark Cross and I'm a full-stack engineer. Born
                             and raised in Annapolis, MD, graduate of the University of
-                            Delaware (go Blue Hens 🐓), and now Richmond local. I've spent my
-                            career in sales and sales leadership, having recently served as
-                            the head of sales for Richmond-based startup,
-                            <a href='https://www.edconnective.com/'> EdConenctive</a>.
+                            Delaware (go Blue Hens 🐓), and now Richmond local. I spent the first decade
+                            (and change) of my career in SaaS sales and sales leadership, and now use the
+                            lessons I've learned to build world-class software.
+                        </p>
+                        <p className='mt-4'>
+                            Mix all of that up with my amazing wife, Amy, our nine-month old son, Wes,
+                            and an insatiable desire to learn, explore, and create?
+                            It's the stuff dreams are made of.
                         </p>
                     </div>
                     <i
