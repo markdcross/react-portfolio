@@ -29,11 +29,12 @@ export const NavBar = () => {
             </Nav.Link>
           </LinkContainer>
 
-          <LinkContainer to="/portfolio">
-            <Nav.Link className="links" onClick={toggleMobileNav}>
-              Portfolio
-            </Nav.Link>
-          </LinkContainer>
+          // TODO Update with recent work
+          {/*<LinkContainer to="/portfolio">*/}
+          {/*  <Nav.Link className="links" onClick={toggleMobileNav}>*/}
+          {/*    Portfolio*/}
+          {/*  </Nav.Link>*/}
+          {/*</LinkContainer>*/}
 
           <Nav.Link
             className="links"
