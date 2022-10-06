@@ -1,11 +1,15 @@
 # [Mark Cross](https://www.markdcross.dev/) - Welcome to my Portfolio!
 
-This page will be frequently updated as I continue to grow as a developer - check back frequently!
+~~This page will be frequently updated as I continue to grow as a developer - check back frequently!~~
+
+[//]: # (TODO Update what I've been doing since bootcamp)
 
 It currently features a clear, clean, and engaging experience with intuitive navigation. It contains a short bio and my
 tech stack.
 
-The second page is my portfolio, including links to the deployed app and repo of a few of my recent projects.
+The second page is my bootcamp portfolio, including links to the deployed app and repo of a few of my first projects.
+
+[//]: # (TODO Update what I've been doing since bootcamp)
 
 My résumé is linked, and a modal with my contact information is available as well.
 

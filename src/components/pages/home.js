@@ -1,8 +1,8 @@
 import React, {Fragment} from 'react';
-import Landing from '../info/Landing';
-import Bio from '../info/Bio';
-import Stack from '../info/Stack';
-import StackMobile from '../info/StackMobile';
+import Landing from '../info/landing';
+import Bio from '../info/bio';
+import Stack from '../info/stack';
+import StackMobile from '../info/stackMobile';
 
 import ScrollAnimation from 'react-animate-on-scroll';
 

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Card from 'react-bootstrap/Card';
-import ProjectDetail from './ProjectDetail';
+import ProjectDetail from './projectDetail';
 
 import {AnimatePresence, motion} from 'framer-motion';
 

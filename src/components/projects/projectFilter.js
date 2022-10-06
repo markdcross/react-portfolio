@@ -1,5 +1,5 @@
 import React from 'react';
-import FilterIcon from './FilterIcon';
+import FilterIcon from './filterIcon';
 
 const ProjectFilter = ({filter}) => {
     return (

@@ -1,6 +1,6 @@
 import React, {Fragment, useState} from 'react';
 import Modal from 'react-bootstrap/Modal';
-import ContactInfo from './ContactInfo';
+import ContactInfo from './contactInfo';
 // import ContactForm from './ContactForm';
 import Nav from 'react-bootstrap/Nav';
 

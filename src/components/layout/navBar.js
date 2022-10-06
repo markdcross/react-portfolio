@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import Logo from './Logo';
-import ContactModal from '../contact/ContactModal';
-import Hamburger from './Hamburger';
+import Logo from './logo';
+import ContactModal from '../contact/contactModal';
+import Hamburger from './hamburger';
 
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';

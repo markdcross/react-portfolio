@@ -16,7 +16,8 @@ export const StackMobile = () => {
                         <li>JavaScript</li>
                         <li>HTML</li>
                         <li>CSS</li>
-                        <li>SQL</li>
+                        <li>SQL Server</li>
+                        <li>PostgreSQL</li>
                         <li>NoSQL</li>
                     </ul>
                     <hr/>

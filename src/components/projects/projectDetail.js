@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import CardButton from './CardButton';
+import CardButton from './cardButton';
 
 const ProjectDetail = ({name, description, repo, app}) => {
     return (

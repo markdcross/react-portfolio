@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import ProjectImage from '../projects/ProjectImage';
-import ProjectFilter from '../projects/ProjectFilter';
+import ProjectImage from '../projects/projectImage';
+import ProjectFilter from '../projects/projectFilter';
 import projects from '../projects/projects.json';
 import Container from 'react-bootstrap/Container';
 
@@ -47,7 +47,7 @@ const Portfolio = () => {
                 />
             ) : (
                 <AnimateSharedLayout>
-                    <h1 className='recentProjects'>Recent Projects</h1>
+                    <h1 className='recentProjects'>Bootcamp Projects</h1>
                     <hr/>
 
                     <ProjectFilter filter={setFilterState}/>
