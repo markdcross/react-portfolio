@@ -29,7 +29,7 @@ export const NavBar = () => {
             </Nav.Link>
           </LinkContainer>
 
-          // TODO Update with recent work
+          {/*TODO Update with recent work*/}
           {/*<LinkContainer to="/portfolio">*/}
           {/*  <Nav.Link className="links" onClick={toggleMobileNav}>*/}
           {/*    Portfolio*/}
