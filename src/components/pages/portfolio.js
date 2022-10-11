@@ -1,74 +1,74 @@
-import React, {useEffect, useState} from 'react';
-import ProjectImage from '../projects/projectImage';
-import ProjectFilter from '../projects/projectFilter';
-import projects from '../projects/projects.json';
-import Container from 'react-bootstrap/Container';
+import React, {useEffect, useState} from "react";
+import ProjectImage from "../projects/projectImage";
+import ProjectFilter from "../projects/projectFilter";
+import projects from "../projects/projects.json";
+import Container from "react-bootstrap/Container";
 
-import ScrollAnimation from 'react-animate-on-scroll';
-import {AnimateSharedLayout} from 'framer-motion';
+import ScrollAnimation from "react-animate-on-scroll";
+import {AnimateSharedLayout} from "framer-motion";
 
 // Loading
-import ReactLoading from 'react-loading';
+import ReactLoading from "react-loading";
 
 // State
 const Portfolio = () => {
-    const [projectState, setProjectState] = useState({
-        projectList: projects,
-        filteredProjectList: projects,
-        loading: true
+  const [projectState, setProjectState] = useState({
+    projectList: projects,
+    filteredProjectList: projects,
+    loading: true,
+  });
+  const [filterState, setFilterState] = useState("");
+
+  const projectListArray = projectState.projectList;
+
+  // Whenever searchState (representing the input in the search bar) changes, filter the project list
+  useEffect(() => {
+    setProjectState({
+      ...projectState,
+      filteredProjectList: projectListArray.filter((project) => {
+        return (
+          // allow users to search by tech
+          project.tech.toString().toLowerCase().indexOf(filterState) !== -1
+        );
+      }),
+      loading: false,
     });
-    const [filterState, setFilterState] = useState('');
 
-    const projectListArray = projectState.projectList;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [filterState]);
 
-    // Whenever searchState (representing the input in the search bar) changes, filter the project list
-    useEffect(() => {
-        setProjectState({
-            ...projectState,
-            filteredProjectList: projectListArray.filter(project => {
-                return (
-                    // allow users to search by tech
-                    project.tech.toString().toLowerCase().indexOf(filterState) !== -1
-                );
-            }),
-            loading: false
-        });
+  return (
+    <div>
+      {projectState.loading ? (
+        <ReactLoading
+          type={"bars"}
+          color={"white"}
+          style={{ alignContent: "center" }}
+        />
+      ) : (
+        <AnimateSharedLayout>
+          <h1 className="recentProjects">Bootcamp Projects</h1>
+          <hr />
 
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [filterState]);
+          <ProjectFilter filter={setFilterState} />
 
-    return (
-        <div>
-            {projectState.loading ? (
-                <ReactLoading
-                    type={'bars'}
-                    color={'white'}
-                    style={{alignContent: 'center'}}
+          <hr />
+          <Container>
+            <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut">
+              {projectState.filteredProjectList.map((projectInfo) => (
+                <ProjectImage
+                  layout
+                  projectInfo={projectInfo}
+                  key={projectInfo.id}
+                  layoutId="projects"
                 />
-            ) : (
-                <AnimateSharedLayout>
-                    <h1 className='recentProjects'>Bootcamp Projects</h1>
-                    <hr/>
-
-                    <ProjectFilter filter={setFilterState}/>
-
-                    <hr/>
-                    <Container>
-                        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'>
-                            {projectState.filteredProjectList.map(projectInfo => (
-                                <ProjectImage
-                                    layout
-                                    projectInfo={projectInfo}
-                                    key={projectInfo.id}
-                                    layoutId='projects'
-                                />
-                            ))}
-                        </ScrollAnimation>
-                    </Container>
-                </AnimateSharedLayout>
-            )}
-        </div>
-    );
+              ))}
+            </ScrollAnimation>
+          </Container>
+        </AnimateSharedLayout>
+      )}
+    </div>
+  );
 };
 
 export default Portfolio;

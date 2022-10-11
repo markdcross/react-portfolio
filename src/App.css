@@ -63,6 +63,10 @@ body {
     animation: bounce 2s infinite;
 }
 
+.awsCert {
+    max-width: 5%;
+}
+
 @keyframes bounce {
     0%,
     20%,
