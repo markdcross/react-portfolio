@@ -39,6 +39,8 @@ export const Stack = () => {
           <ul className="stackUl">
             <li>React</li>
             <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>C#</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>SQL</li>
@@ -47,16 +49,14 @@ export const Stack = () => {
         </Col>
         <Col className="stackCol">
           <ul className="stackUl">
-            <li>Git & GitHub</li>
-            <li>Bootstrap/Bulma/Materialize</li>
-            <li>jQuery/AJAX</li>
-            <li>Progressive Web Apps</li>
-            <li>Node.js/Express</li>
+            <li>AWS Certified Cloud Practitioner</li>
+            <li>Azure DevOps</li>
+            <li>Serverless</li>
             <li>SQL Server/PostgreSQL</li>
             <li>DynamoDB/MongoDB</li>
-            <li>Jest/Mocha</li>
-            <li>Postman</li>
-            <li>Heroku/Netlify/Digital Ocean</li>
+            <li>Microservices</li>
+            <li>Progressive Web Apps</li>
+            <li>Jest/Mocha/Webdriver.io/Cypress</li>
           </ul>
         </Col>
         <Col className="stackCol">
