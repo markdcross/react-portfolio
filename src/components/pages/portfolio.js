@@ -1,14 +1,14 @@
-import React, {useEffect, useState} from "react";
-import ProjectImage from "../projects/projectImage";
-import ProjectFilter from "../projects/projectFilter";
-import projects from "../projects/projects.json";
-import Container from "react-bootstrap/Container";
+import React, {useEffect, useState} from 'react'
+import ProjectImage from '../projects/projectImage'
+import ProjectFilter from '../projects/projectFilter'
+import projects from '../projects/projects.json'
+import Container from 'react-bootstrap/Container'
 
-import ScrollAnimation from "react-animate-on-scroll";
-import {AnimateSharedLayout} from "framer-motion";
+import ScrollAnimation from 'react-animate-on-scroll'
+import {AnimateSharedLayout} from 'framer-motion'
 
 // Loading
-import ReactLoading from "react-loading";
+import ReactLoading from 'react-loading'
 
 // State
 const Portfolio = () => {
